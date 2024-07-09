@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #003580;
+    color: white;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.booking-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flight-details, .passenger-details {
+    width: 45%;
+}
+
+h2 {
+    border-bottom: 2px solid #003580;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: #003580;
+}
+
+p {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #003580;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00264d;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #003580;
+    color: white;
+    margin-top: 20px;
+}

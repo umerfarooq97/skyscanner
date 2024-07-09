@@ -1,0 +1,70 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cardwrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 30px;
+}
+
+.cardwrap > .card{
+    width: 380px;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin-left: 10px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.cardwrap > .card > .top img{
+    height: 180px;
+    width: 380px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cardwrap > .card > .second {
+    margin: 5px 10px;
+}
+
+.cardwrap > .card > .second p{
+    margin: 3px 0px;
+}
+
+.cardwrap > .card > .third{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cardwrap > .card > .third > .left{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 200px;
+}
+
+.cardwrap > .card > .third > .left > .center{
+    margin-top: 20px;
+}
+.cardwrap > .card > .third > .left > .logo img{
+    margin-left: 10px;
+    width: 50px;
+    height: 70px;
+}
+
+.cardwrap  >.card > .third > .right{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cardwrap > .card > .bottom{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.cardwrap > .card > .bottom a{
+    text-decoration: none;
+    color: #043569;
+    font-weight: 600;
+}

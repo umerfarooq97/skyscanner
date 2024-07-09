@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="popularflightsection.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="index.js"></script>
+    <title>SkyScanner</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="row1">
+                <div class="left">
+                    <img src="/images/logo.png" alt="logo">
+                </div>
+                <div class="right">
+                    <div class="icon">
+                        <a href="flightGallery.html"><i class="fa-solid fa-earth-asia"></i></a>
+                    </div>
+                    <div class="icon">    
+                        <a href="#popular"><i class="fa-solid fa-heart"></i></a>
+                    </div> 
+                    <div class="button">   
+                        <button id="loginbtn"><i class="fa-solid fa-user"></i> Login</button>
+                    </div>                        
+                    <div class="icon" id="menu">    
+                        <i class="fa-solid fa-list"></i>
+                    </div>  
+                    <div class="list">
+                        <ul>
+                            <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                            <li><a href="about.html"><i class="fa-solid fa-building"></i> About us</a></li>
+                            <li><a href="Contact.html"><i class="fa-solid fa-address-card"></i> Contact</a></li>
+                            <li><a href="flights.html"><i class="fa-solid fa-plane"></i> Flights</a></li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- second row -->
+            <div class="spacer"></div>
+            <div class="title">
+                <h1>Millions of cheap flights. One simple search.</h1>
+            </div>
+
+            <!-- Third row -->
+            <div class="thirdrow">
+                <button>Flights</button>
+            </div>
+
+            <!-- fourth row -->
+            <div class="fourthrow">
+                <div class="buttons">
+                    <input type="text" placeholder="Enter Departing City">
+                </div>
+                <div class="buttons">
+                    <input type="text" placeholder="Enter Destination">
+                </div>
+                <div class="buttons">
+                    <input type="text" placeholder="Depart-Date">
+                </div>
+                <div class="buttons">
+                    <input type="text" placeholder="Return-Date">
+                </div>
+                <div class="buttons">
+                    <input type="text" placeholder="Select class">
+                </div>
+                <div class="buttons">
+                   <button type="search">Search</button>
+                </div>
+            </div>
+
+            <!-- fifth row -->
+            <div class="fifthrow">
+                <div class="checkbox">
+                    <input type="checkbox" name="aneeqa" id="aneeqa">
+                    <label for="aneeqa"> Add nearby airport</label> 
+
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="aneeqa" id="aneeqa">
+                    <label for="aneeqa"> Direct flights</label> 
+
+                </div>
+            </div>
+        </div>
+
+        <!-- hero section -->
+        <div class="spacer"></div>
+        <div class="hero">
+            <div class="row1">
+                <div class="herobtn">
+                    <button id="explore-everywhere"><i class="fa-solid fa-earth-asia"></i> &nbsp; Explore Everywhere</button>
+                </div>
+                <div class="herobtn">
+                    <button id="about-us"><i class="fa-regular fa-address-card"></i>&nbsp; &nbsp;  About Us</button>
+                </div>
+                <div class="herobtn">
+                    <button id="contact-us"><i class="fa-solid fa-phone-volume"></i> &nbsp; Contact Us</button>
+                </div>
+            </div>
+
+            <div class="Explore">
+                <div class="background">
+                    <video src="/images/video (2160p).mp4" autoplay loop></video>
+                </div>
+                <div class="text">
+                    <p>Can't decide where to go?</p>
+                    <h1>Explore Every Destination</h1>
+                    <button id="searchflights">Search Flights Everywhere</button>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="popularheading">
+            <h1>The most Popular flights right now</h1>
+            <p>Other travellers are loving these destinations. Search and compare flights, hotels, and car hire and join them on the adventure.</p>
+        </div>
+        <div class="spacer"></div>
+        <!-- popolar flights div -->
+        <div class="popular" id="popular">
+            <div class="flight">
+                <div class="fimg">
+                    <img src="/images/islamabad.jpg" alt="">
+                </div>
+                <div>
+                    <h2>Islamabad</h2>
+                    <div class="spacer10"></div>
+                    <a href="flights.html">Flights</a>
+                </div>
+            </div>
+            <div class="flight">
+                <div class="fimg">
+                    <img src="/images/maldives.jpeg" alt="">
+                </div>
+                <div>
+                    <h2>Maldives</h2>
+                    <div class="spacer10"></div>
+                    <a href="flights.html">Flights</a>
+                </div>
+            </div>
+            <div class="flight">
+                <div class="fimg">
+                    <img src="/images/cappadocia.jpeg" alt="">
+                </div>
+                <div>
+                    <h2>Turkey</h2>
+                    <div class="spacer10"></div>
+                    <a href="flights.html">Flights</a>
+                </div>
+            </div>
+            <div class="flight">
+                <div class="fimg">
+                    <img src="/images/singapure.jpeg" alt="">
+                </div>
+                <div>
+                    <h2>Singapure</h2>
+                    <div class="spacer10"></div>
+                    <a href="flights.html">Flights</a>
+                </div>
+            </div>
+            <div class="flight">
+                <div class="fimg">
+                    <img src="/images/aurora.jpeg" alt="">
+                </div>
+                <div>
+                    <h2>Norway</h2>
+                    <div class="spacer10"></div>
+                    <a href="flights.html">Flights</a>
+                </div>
+            </div>
+            <div class="flight">
+                <div class="fimg">
+                    <img src="/images/Phukket.jpeg" alt="">
+                </div>
+                <div>
+                    <h2>Phukket</h2>
+                    <div class="spacer10"></div>
+                    <a href="flights.html">Flights</a>
+                </div>
+            </div>
+            <div class="flight">
+                <div class="fimg">
+                    <img src="/images/Makkah.jpeg" alt="">
+                </div>
+                <div>
+                    <h2>Mecca</h2>
+                    <div class="spacer10"></div>
+                    <a href="flights.html">Flights</a>
+                </div>
+            </div>
+            <div class="flight">
+                <div class="fimg">
+                    <img src="/images/Germany.jpeg" alt="">
+                </div>
+                <div>
+                    <h2>Germany</h2>
+                    <div class="spacer10"></div>
+                    <a href="flights.html">Flights</a>
+                </div>
+            </div>
+            <div class="flight">
+                <div class="fimg">
+                    <img src="/images/Australia.jpeg" alt="">
+                </div>
+                <div>
+                    <h2>Australia</h2>
+                    <div class="spacer10"></div>
+                    <a href="flights.html">Flights</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.8509090393472!2d72.76536777441777!3d33.76451833287047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfa7ef4a33c771%3A0x20e7ec6efa99165c!2sAslam%20Market!5e0!3m2!1sen!2s!4v1710310844837!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+  
+
+
+    <div class="footerWrap">
+        <div class="logo">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="footer">
+
+        <div class="link">
+            <a href="About.html">About us</a>
+        </div>
+        <div class="link">
+            <a href="Explore.html">Explore</a>
+        </div>
+        <div class="link">
+            <a href="Contact.html">Contact us</a>
+        </div>
+        <div class="link">
+            <a href="Register.html">Register</a>
+        </div>
+    </div>
+    <div class="tos">
+        <p>Compare and book cheap flights with Skyscanner</p>
+        <p>© Skyscanner Ltd </p>
+    </div>
+</div>
+</body>
+</html>

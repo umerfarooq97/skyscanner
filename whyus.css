@@ -1,0 +1,44 @@
+.whyus{
+    margin: 0px 40px;
+    padding: 20px 0px;
+    background-color: rgb(215, 216, 218);
+    border-radius: 15px;
+}
+.whyus > .top{
+    padding: 10px 60px;
+}
+.whyuscardwrap{
+    margin: 30px 60px 0px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.whyuscardwrap > .whyuscard{
+    margin-top: 20px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.whyuscardwrap > .whyuscard > .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whyuscardwrap > .whyuscard > .top img{
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.whyuscardwrap > .whyuscard > .middle{
+    width: 350px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.whyuscardwrap > .whyuscard > .end{
+    margin-bottom: 20px;
+    text-align: center;
+}

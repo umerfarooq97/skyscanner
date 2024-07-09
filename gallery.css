@@ -1,0 +1,20 @@
+.carousel-item{
+    position: relative;
+}
+
+.carousel-item > .title{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: aliceblue;
+    width: 600px;
+    height: 220px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.carousel-item img{
+    height: 600px;
+    width: 100%;
+}

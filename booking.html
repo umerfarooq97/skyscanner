@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/logo/PIA.svg" alt="PIA Logo" class="logo">
+            <h1>Flight Booking</h1>
+        </header>
+        <main>
+            <div class="booking-card">
+                <div class="flight-details">
+                    <h2>Flight Details</h2>
+                    <p><strong>Date:</strong> Sat, 30 March</p>
+                    <p><strong>Route:</strong> LHR-DUB with PIA</p>
+                    <p><strong>Type:</strong> Direct</p>
+                </div>
+                <div class="passenger-details">
+                    <h2>Passenger Details</h2>
+                    <form id="booking-form">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        
+                        <label for="passport">Passport Number:</label>
+                        <input type="text" id="passport" name="passport" required>
+                        
+                        <label for="seats">Number of Seats:</label>
+                        <input type="number" id="seats" name="seats" required min="1">
+                        
+                        <button type="submit">Book Now</button>
+                    </form>
+                    <div id="confirmation-message" class="hidden">
+                        <p>Done! Your booking has been submitted.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 PIA Airlines. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log('Form submitted!'); 
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => data[key] = value);
+
+            fetch('/book', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.text())
+            .then(message => {
+                document.getElementById('confirmation-message').classList.remove('hidden');
+                document.getElementById('confirmation-message').innerText = message;
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>

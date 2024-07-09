@@ -1,0 +1,108 @@
+.hero{
+    padding: 0px 60px;
+}
+
+.hero > .row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero > .row1 > .herobtn button{
+    width: 370px;
+    height: 70px;
+    background-color: #05203c;
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.hero > .row1 > .herobtn button:hover{
+    cursor: pointer;
+    background-color: #072c54;
+}
+
+.Explore{
+    position: relative;
+    height: 450px;
+    width: 100%;
+}
+
+.Explore > .background video{
+    display: block;
+    object-fit: cover;
+    margin-top: 40px;
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.Explore > .text{
+    position: absolute;
+    top: 150px;
+    width: 500px;
+    left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Explore > .text p{
+    font-size: 1rem;
+    font-weight: 900;
+    color: white;
+}
+
+ .Explore > .text h1{
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: antiquewhite;
+}
+
+.Explore > .text button{
+    width: 250px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.Explore > .text button:hover{
+    cursor: pointer;
+    background-color: rgb(202, 202, 202);
+}
+
+
+@media screen and (max-width: 768px) {
+    .Explore {
+        height: auto;
+    }
+
+    .Explore > .background video {
+        height: 300px; /* Adjust height as needed for smaller screens */
+    }
+
+    .Explore > .text {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Explore > .text h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .Explore > .text button {
+        width: 200px; /* Adjust button width for smaller screens */
+    }
+    .hero{
+        padding: 0px;
+    }
+    .hero > .row1{
+        flex-direction: column;
+        padding: 30px;
+    }
+}

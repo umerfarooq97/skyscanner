@@ -1,0 +1,114 @@
+*{
+    border: 0px;
+    margin: 0px;
+}
+.navbar{
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 150px;
+}
+.navbar > .logo img{
+    width: 160px;
+}
+.wrapper > .background{
+    position: absolute;
+}
+
+.wrapper > .background img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.navbar > .right {
+    margin-top: 12px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navbar > .right > .navlink a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.quote{
+    position: relative;
+    color: aliceblue;
+    text-align: left;
+    width: 700px;
+    margin-top: 130px;
+    margin-left: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+/* second section */
+
+.about{
+    padding: 0px 120px;
+    margin-top: 250px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.about > .left {
+    width: 500px;
+    font-size: 1.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #013872;
+}
+
+.about > .right {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.about > .right > .text{
+    width: 600px;
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.third{
+    height: 400px;
+    background-color:#ff7b59;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 100px 200px 0px 200px ;
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.75);
+}
+ /* about2 */
+ .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+    margin-top: 120px;
+    padding-bottom: 100px;
+
+ }
+ .container > .abhead{
+    width: 500px;
+    font-size: 1.6rem;
+    color: #013872;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .container > .para > .text{
+    width: 600px;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-bottom: 30px;
+ }
